@@ -8,7 +8,7 @@ export interface Question {
 export interface Option {
   id: string;
   text: string;
-  personalityPoints: Record&lt;string, number&gt;;
+  personalityPoints: Record<string, number>;
 }
 
 export const questions: Question[] = [

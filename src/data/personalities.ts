@@ -93,8 +93,8 @@ export const personalities: Personality[] = [
   }
 ];
 
-export const calculatePersonality = (scores: Record&lt;string, number&gt;): Personality =&gt; {
-  const personalityScores: Record&lt;string, number&gt; = {
+export const calculatePersonality = (scores: Record<string, number>): Personality => {
+  const personalityScores: Record<string, number> = {
     threePoint: (scores.threePoint || 0) + (scores.shooter || 0),
     bigMan: (scores.bigMan || 0) + (scores.rebounder || 0) + (scores.postMove || 0),
     playmaker: (scores.playmaker || 0) + (scores.teamPlayer || 0) + (scores.unselfish || 0) + (scores.ballHandler || 0),
@@ -109,11 +109,11 @@ export const calculatePersonality = (scores: Record&lt;string, number&gt;): Pers
   let resultId = "allAround";
 
   for (const [id, score] of Object.entries(personalityScores)) {
-    if (score &gt; maxScore) {
+    if (score > maxScore) {
       maxScore = score;
       resultId = id;
     }
   }
 
-  return personalities.find(p =&gt; p.id === resultId) || personalities[6];
+  return personalities.find(p => p.id === resultId) || personalities[6];
 };
