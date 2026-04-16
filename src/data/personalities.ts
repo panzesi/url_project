@@ -12,101 +12,101 @@ export interface Personality {
 
 export const personalities: Personality[] = [
   {
-    id: "threePoint",
-    name: "三分雨神",
-    emoji: "🎯",
-    description: "你是球场的狙击手！三分线外就是你的领地，无论防守多么严密，你总能找到出手空间，用一记记精准的三分雨打垮对手的信心。你是现代篮球的宠儿，拉开空间的专家！",
-    strengths: ["精准的远投能力", "出色的投篮节奏", "强大的心理素质", "拉开空间的威胁"],
-    color: "#FF6B35",
-    iconName: "target",
-    primaryTrait: "shooter"
+    id: "yasuo",
+    name: "疾风剑豪亚索（帅哥）",
+    emoji: "⚔️",
+    description: "你就像疾风剑豪亚索一样，自信、独立，追求自由。你喜欢挑战，不惧怕困难，总是相信自己能够克服一切。你有着独特的个人风格，不愿意被束缚，享受自由的感觉。",
+    strengths: ["自信独立", "追求自由", "勇敢无畏", "独特风格"],
+    color: "#7B68EE",
+    iconName: "wind",
+    primaryTrait: "free"
   },
   {
-    id: "bigMan",
-    name: "内线巨兽",
-    emoji: "🦍",
-    description: "你是篮下的统治者！在内线你就像一头野兽，篮板球是你的囊中之物，盖帽是你的拿手好戏。对手看到你在篮下，都不敢轻易突进来。你是球队的禁区守护神！",
-    strengths: ["强大的篮板能力", "出色的护筐意识", "内线得分手段", "身体对抗优势"],
-    color: "#1A365D",
-    iconName: "shield",
-    primaryTrait: "dominant"
-  },
-  {
-    id: "playmaker",
-    name: "传球魔术师",
-    emoji: "🎭",
-    description: "你是球场上的指挥官！你的传球就像变魔术一样，总是能在最意想不到的时机找到空位的队友。你不贪恋出手，而是用你的视野和传球让全队都参与进来，你是真正的团队球员！",
-    strengths: ["出色的传球视野", "优秀的控球技术", "无私的打球风格", "良好的篮球智商"],
-    color: "#FFD93D",
-    iconName: "users",
-    primaryTrait: "unselfish"
-  },
-  {
-    id: "defender",
-    name: "防守铁闸",
-    emoji: "🛡️",
-    description: "你是对手的噩梦！你的防守就像一道铁闸，让对方的头号得分手寸步难行。你充满斗志，永不放弃，每一次防守都全力以赴。你用防守改变比赛的走势！",
-    strengths: ["出色的防守意识", "坚韧的意志品质", "良好的脚步移动", "强大的比赛阅读"],
-    color: "#2D3748",
-    iconName: "lock",
-    primaryTrait: "lockdown"
-  },
-  {
-    id: "driver",
-    name: "突破狂人",
-    emoji: "⚡",
-    description: "你是球场上的闪电侠！你的第一步快如闪电，突破犀利无比，对手根本跟不上你的脚步。你总是能撕裂对方的防线，杀向篮下完成得分或制造犯规。你是进攻的利器！",
-    strengths: ["出色的爆发力", "犀利的突破能力", "强大的终结能力", "制造犯规的意识"],
-    color: "#E53E3E",
-    iconName: "zap",
-    primaryTrait: "athletic"
-  },
-  {
-    id: "rhythm",
-    name: "节奏大师",
-    emoji: "🎵",
-    description: "你是球场上的DJ！你掌控着比赛的节奏，快慢自如，让对手跟着你的节奏走。你用你的节奏变化打乱对方的防守部署，在最舒服的节奏下得分。你是智慧型球员的代表！",
-    strengths: ["优秀的节奏控制", "出色的篮球智商", "稳定的比赛节奏", "冷静的头脑"],
-    color: "#805AD5",
-    iconName: "music",
-    primaryTrait: "smart"
-  },
-  {
-    id: "allAround",
-    name: "全能战士",
-    emoji: "🦸",
-    description: "你是球场上的全能战士！得分、篮板、助攻、抢断、盖帽，你样样精通。你没有明显的短板，在任何位置都能做出贡献。你是球队的万金油，哪里需要哪里搬！",
-    strengths: ["全面的技术能力", "优秀的身体素质", "良好的适应能力", "无私的团队精神"],
+    id: "rammus",
+    name: "披甲龙龟（敦厚）",
+    emoji: "🐢",
+    description: "你就像披甲龙龟一样，稳重、可靠，充满保护欲。你总是默默地守护着你关心的人，不计较个人得失。你虽然外表看起来有些笨拙，但内心坚定，是团队中最可靠的后盾。",
+    strengths: ["稳重可靠", "保护欲强", "坚韧不拔", "默默奉献"],
     color: "#38B2AC",
-    iconName: "star",
-    primaryTrait: "versatile"
+    iconName: "shield",
+    primaryTrait: "protective"
   },
   {
-    id: "clutch",
-    name: "关键先生",
-    emoji: "💎",
-    description: "你是天生的大心脏！比赛越到关键时刻，你越能挺身而出。当球队需要有人站出来时，你总是第一个挺身而出，用一记记关键球拯救球队。你是为大场面而生的球员！",
-    strengths: ["强大的心理素质", "关键时刻的表现", "出色的抗压能力", "领袖气质"],
-    color: "#D69E2E",
-    iconName: "crown",
-    primaryTrait: "killer"
+    id: "fizz",
+    name: "小鱼人菲兹（古灵精怪）",
+    emoji: "🐟",
+    description: "你就像小鱼人菲兹一样，活泼、机智，喜欢恶作剧。你充满好奇心，总是能发现生活中的乐趣。你思维敏捷，善于应变，总能在关键时刻想出奇招解决问题。",
+    strengths: ["活泼开朗", "机智灵活", "好奇心强", "善于创新"],
+    color: "#4299E1",
+    iconName: "fish",
+    primaryTrait: "playful"
+  },
+  {
+    id: "karthus",
+    name: "死亡颂唱者·卡尔萨斯（阴暗）",
+    emoji: "💀",
+    description: "你就像死亡颂唱者卡尔萨斯一样，深沉、神秘，喜欢思考深刻的问题。你有着独特的视角，能够看到事物的本质。你虽然外表看起来有些阴暗，但内心有着自己的坚持和信念。",
+    strengths: ["深沉思考", "独特视角", "坚持信念", "洞察力强"],
+    color: "#4A5568",
+    iconName: "music",
+    primaryTrait: "deep"
+  },
+  {
+    id: "vayne",
+    name: "暗夜猎手薇恩（意志坚定）",
+    emoji: "🏹",
+    description: "你就像暗夜猎手薇恩一样，专注、坚韧，目标明确。你有着强烈的意志，一旦确定目标就会全力以赴。你不怕困难和挑战，总是能够在逆境中坚持到底。",
+    strengths: ["意志坚定", "目标明确", "专注投入", "逆境中成长"],
+    color: "#F6AD55",
+    iconName: "target",
+    primaryTrait: "determined"
+  },
+  {
+    id: "wukong",
+    name: "齐天大圣孙悟空（阳光开朗不服输）",
+    emoji: "🐵",
+    description: "你就像齐天大圣孙悟空一样，阳光开朗，永不言败。你充满活力，总是能够感染身边的人。你勇敢无畏，喜欢挑战权威，相信自己能够战胜一切困难。",
+    strengths: ["阳光开朗", "永不言败", "充满活力", "勇敢无畏"],
+    color: "#ED8936",
+    iconName: "star",
+    primaryTrait: "optimistic"
+  },
+  {
+    id: "ahri",
+    name: "九尾妖狐阿狸（美丽性感）",
+    emoji: "🦊",
+    description: "你就像九尾妖狐阿狸一样，魅力四射，优雅迷人。你善于交际，能够轻松赢得他人的好感。你有着独特的魅力，总是能够吸引别人的注意。",
+    strengths: ["魅力四射", "优雅迷人", "善于交际", "洞察力强"],
+    color: "#F687B3",
+    iconName: "heart",
+    primaryTrait: "charming"
+  },
+  {
+    id: "braum",
+    name: "弗雷尔卓德之心布隆（可靠的朋友）",
+    emoji: "🛡️",
+    description: "你就像弗雷尔卓德之心布隆一样，忠诚、友善，乐于助人。你总是愿意为朋友付出，是团队中最可靠的伙伴。你有着强烈的责任感，总是能够在关键时刻站出来保护他人。",
+    strengths: ["忠诚可靠", "友善助人", "责任感强", "团队精神"],
+    color: "#90CDF4",
+    iconName: "users",
+    primaryTrait: "loyal"
   }
 ];
 
 export const calculatePersonality = (scores: Record<string, number>): Personality => {
   const personalityScores: Record<string, number> = {
-    threePoint: (scores.threePoint || 0) + (scores.shooter || 0),
-    bigMan: (scores.bigMan || 0) + (scores.rebounder || 0) + (scores.postMove || 0),
-    playmaker: (scores.playmaker || 0) + (scores.teamPlayer || 0) + (scores.unselfish || 0) + (scores.ballHandler || 0),
-    defender: (scores.defender || 0) + (scores.lockdown || 0) + (scores.tough || 0),
-    driver: (scores.driver || 0) + (scores.athletic || 0),
-    rhythm: (scores.rhythm || 0) + (scores.smart || 0) + (scores.patient || 0),
-    allAround: (scores.allAround || 0) + (scores.versatile || 0) + (scores.skilled || 0),
-    clutch: (scores.clutch || 0) + (scores.killer || 0) + (scores.leader || 0)
+    yasuo: (scores.free || 0) + (scores.confident || 0) + (scores.independent || 0),
+    rammus: (scores.protective || 0) + (scores.reliable || 0) + (scores.stable || 0),
+    fizz: (scores.playful || 0) + (scores.clever || 0) + (scores.curious || 0),
+    karthus: (scores.deep || 0) + (scores.mysterious || 0) + (scores.thoughtful || 0),
+    vayne: (scores.determined || 0) + (scores.focused || 0) + (scores.persistent || 0),
+    wukong: (scores.optimistic || 0) + (scores.energetic || 0) + (scores.brave || 0),
+    ahri: (scores.charming || 0) + (scores.social || 0) + (scores.elegant || 0),
+    braum: (scores.loyal || 0) + (scores.helpful || 0) + (scores.responsible || 0)
   };
 
   let maxScore = -1;
-  let resultId = "allAround";
+  let resultId = "braum";
 
   for (const [id, score] of Object.entries(personalityScores)) {
     if (score > maxScore) {
@@ -115,5 +115,5 @@ export const calculatePersonality = (scores: Record<string, number>): Personalit
     }
   }
 
-  return personalities.find(p => p.id === resultId) || personalities[6];
+  return personalities.find(p => p.id === resultId) || personalities[7];
 };

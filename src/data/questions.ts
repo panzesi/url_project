@@ -14,261 +14,261 @@ export interface Option {
 export const questions: Question[] = [
   {
     id: 1,
-    text: "在比赛的最后30秒，你们队落后1分，球在你手上，你会？",
+    text: "在游戏的关键团战时，你会选择哪种方式参与？",
     options: [
       {
         id: "a",
-        text: "直接干拔三分，一剑封喉",
-        personalityPoints: { threePoint: 3, clutch: 2, scorer: 1 }
+        text: "冲锋在前，独自切入敌方后排",
+        personalityPoints: { free: 3, confident: 2, independent: 1 }
       },
       {
         id: "b",
-        text: "突破杀向篮下，制造犯规或上篮",
-        personalityPoints: { driver: 3, scorer: 2, clutch: 1 }
+        text: "保护队友，站在后排为他们挡技能",
+        personalityPoints: { protective: 3, reliable: 2, stable: 1 }
       },
       {
         id: "c",
-        text: "找空位的队友，相信他们能投进",
-        personalityPoints: { playmaker: 3, teamPlayer: 2 }
+        text: "灵活走位，寻找机会骚扰敌人",
+        personalityPoints: { playful: 3, clever: 2, curious: 1 }
       },
       {
         id: "d",
-        text: "稳住节奏，寻找最佳机会",
-        personalityPoints: { rhythm: 3, smart: 2 }
+        text: "在远处观察，等待最佳时机",
+        personalityPoints: { deep: 3, mysterious: 2, thoughtful: 1 }
       }
     ]
   },
   {
     id: 2,
-    text: "你最喜欢的球场位置是？",
+    text: "你最喜欢的游戏风格是？",
     options: [
       {
         id: "a",
-        text: "控球后卫，掌控全局",
-        personalityPoints: { playmaker: 3, rhythm: 2, smart: 1 }
+        text: "追求极限操作，秀翻全场",
+        personalityPoints: { free: 3, confident: 2, independent: 1 }
       },
       {
         id: "b",
-        text: "得分后卫，疯狂得分",
-        personalityPoints: { scorer: 3, threePoint: 2, driver: 1 }
+        text: "稳扎稳打，确保团队胜利",
+        personalityPoints: { protective: 3, reliable: 2, stable: 1 }
       },
       {
         id: "c",
-        text: "前锋，能里能外",
-        personalityPoints: { allAround: 3, versatile: 2 }
+        text: "出其不意，玩弄敌人于股掌之间",
+        personalityPoints: { playful: 3, clever: 2, curious: 1 }
       },
       {
         id: "d",
-        text: "中锋，内线霸主",
-        personalityPoints: { bigMan: 3, defender: 2, rebounder: 1 }
+        text: "冷静分析，寻找敌人弱点",
+        personalityPoints: { deep: 3, mysterious: 2, thoughtful: 1 }
       }
     ]
   },
   {
     id: 3,
-    text: "在防守端，你更注重什么？",
+    text: "当队友失误导致团战失败时，你会怎么做？",
     options: [
       {
         id: "a",
-        text: "锁死对方的头号得分手",
-        personalityPoints: { defender: 3, lockdown: 2 }
+        text: "鼓励队友，一起分析问题",
+        personalityPoints: { loyal: 3, helpful: 2, responsible: 1 }
       },
       {
         id: "b",
-        text: "保护篮板球，守护篮筐",
-        personalityPoints: { rebounder: 3, bigMan: 2, defender: 1 }
+        text: "保持沉默，专注于下一场战斗",
+        personalityPoints: { determined: 3, focused: 2, persistent: 1 }
       },
       {
         id: "c",
-        text: "抢断快攻，转换得分",
-        personalityPoints: { thief: 2, driver: 2, scorer: 1 }
+        text: "用幽默的方式化解尴尬",
+        personalityPoints: { optimistic: 3, energetic: 2, brave: 1 }
       },
       {
         id: "d",
-        text: "团队协防，补位意识",
-        personalityPoints: { teamPlayer: 3, smart: 2, defender: 1 }
+        text: "用魅力感染队友，重新振作",
+        personalityPoints: { charming: 3, social: 2, elegant: 1 }
       }
     ]
   },
   {
     id: 4,
-    text: "队友传球给你，你在三分线外空位，你会？",
+    text: "你更倾向于选择哪种类型的英雄？",
     options: [
       {
         id: "a",
-        text: "毫不犹豫，果断出手",
-        personalityPoints: { threePoint: 3, shooter: 2, confident: 1 }
+        text: "刺客型英雄，追求瞬间爆发",
+        personalityPoints: { free: 3, confident: 2, independent: 1 }
       },
       {
         id: "b",
-        text: "假动作晃一下，突破进去",
-        personalityPoints: { driver: 3, smart: 2, scorer: 1 }
+        text: "坦克型英雄，保护队友",
+        personalityPoints: { protective: 3, reliable: 2, stable: 1 }
       },
       {
         id: "c",
-        text: "观察队友位置，寻找更好机会",
-        personalityPoints: { playmaker: 3, teamPlayer: 2 }
+        text: "法师型英雄，控制和消耗",
+        personalityPoints: { deep: 3, mysterious: 2, thoughtful: 1 }
       },
       {
         id: "d",
-        text: "运球调整节奏，中距离出手",
-        personalityPoints: { rhythm: 2, scorer: 2, smart: 1 }
+        text: "射手型英雄，远程输出",
+        personalityPoints: { determined: 3, focused: 2, persistent: 1 }
       }
     ]
   },
   {
     id: 5,
-    text: "你的打球风格更像哪位球星？",
+    text: "在游戏中遇到逆风局，你会怎么做？",
     options: [
       {
         id: "a",
-        text: "库里 - 三分如雨",
-        personalityPoints: { threePoint: 3, shooter: 2, rhythm: 1 }
+        text: "鼓励队友，永不放弃",
+        personalityPoints: { optimistic: 3, energetic: 2, brave: 1 }
       },
       {
         id: "b",
-        text: "詹姆斯 - 全能战士",
-        personalityPoints: { allAround: 3, playmaker: 2, leader: 1 }
+        text: "专注于自己的发育，寻找翻盘机会",
+        personalityPoints: { determined: 3, focused: 2, persistent: 1 }
       },
       {
         id: "c",
-        text: "科比 - 杀手本色",
-        personalityPoints: { scorer: 3, clutch: 2, killer: 1 }
+        text: "分析局势，制定防守策略",
+        personalityPoints: { deep: 3, mysterious: 2, thoughtful: 1 }
       },
       {
         id: "d",
-        text: "奥尼尔 - 内线霸主",
-        personalityPoints: { bigMan: 3, dominant: 2, rebounder: 1 }
+        text: "用幽默的方式缓解压力",
+        personalityPoints: { playful: 3, clever: 2, curious: 1 }
       }
     ]
   },
   {
     id: 6,
-    text: "在快攻中，你带球前场3打2，你会？",
+    text: "你认为游戏中最重要的品质是什么？",
     options: [
       {
         id: "a",
-        text: "自己杀筐，劲爆扣篮",
-        personalityPoints: { driver: 3, athletic: 2, scorer: 1 }
+        text: "个人能力和操作",
+        personalityPoints: { free: 3, confident: 2, independent: 1 }
       },
       {
         id: "b",
-        text: "传给跟进的队友，轻松得分",
-        personalityPoints: { playmaker: 3, teamPlayer: 2, unselfish: 1 }
+        text: "团队合作和沟通",
+        personalityPoints: { loyal: 3, helpful: 2, responsible: 1 }
       },
       {
         id: "c",
-        text: "吸引防守，分给底角三分",
-        personalityPoints: { smart: 2, playmaker: 2, threePoint: 1 }
+        text: "战略思维和分析",
+        personalityPoints: { deep: 3, mysterious: 2, thoughtful: 1 }
       },
       {
         id: "d",
-        text: "减速控制节奏，打成功率",
-        personalityPoints: { rhythm: 3, smart: 2, patient: 1 }
+        text: "乐观心态和韧性",
+        personalityPoints: { optimistic: 3, energetic: 2, brave: 1 }
       }
     ]
   },
   {
     id: 7,
-    text: "你最看重的篮球品质是？",
+    text: "在游戏中，你更喜欢哪种玩法？",
     options: [
       {
         id: "a",
-        text: "团队配合，无私分享",
-        personalityPoints: { teamPlayer: 3, playmaker: 2, unselfish: 1 }
+        text: "单带推塔，牵制敌人",
+        personalityPoints: { free: 3, confident: 2, independent: 1 }
       },
       {
         id: "b",
-        text: "关键时刻，挺身而出",
-        personalityPoints: { clutch: 3, killer: 2, leader: 1 }
+        text: "抱团推进，集体行动",
+        personalityPoints: { loyal: 3, helpful: 2, responsible: 1 }
       },
       {
         id: "c",
-        text: "防守强硬，永不放弃",
-        personalityPoints: { defender: 3, tough: 2, lockdown: 1 }
+        text: "野区游走，寻找机会",
+        personalityPoints: { playful: 3, clever: 2, curious: 1 }
       },
       {
         id: "d",
-        text: "得分能力，统治比赛",
-        personalityPoints: { scorer: 3, dominant: 2, confident: 1 }
+        text: "线上发育，稳健提升",
+        personalityPoints: { determined: 3, focused: 2, persistent: 1 }
       }
     ]
   },
   {
     id: 8,
-    text: "在训练中，你最喜欢练习什么？",
+    text: "当你获得优势时，你会怎么做？",
     options: [
       {
         id: "a",
-        text: "三分球投篮，百发百中",
-        personalityPoints: { threePoint: 3, shooter: 2, dedicated: 1 }
+        text: "乘胜追击，扩大优势",
+        personalityPoints: { free: 3, confident: 2, independent: 1 }
       },
       {
         id: "b",
-        text: "内线脚步和勾手",
-        personalityPoints: { bigMan: 3, postMove: 2, skilled: 1 }
+        text: "稳健运营，确保胜利",
+        personalityPoints: { determined: 3, focused: 2, persistent: 1 }
       },
       {
         id: "c",
-        text: "传球视野和控球",
-        personalityPoints: { playmaker: 3, ballHandler: 2, smart: 1 }
+        text: "分享资源，帮助队友",
+        personalityPoints: { loyal: 3, helpful: 2, responsible: 1 }
       },
       {
         id: "d",
-        text: "防守脚步和体能",
-        personalityPoints: { defender: 3, tough: 2, lockdown: 1 }
+        text: "戏弄敌人，享受游戏",
+        personalityPoints: { playful: 3, clever: 2, curious: 1 }
       }
     ]
   },
   {
     id: 9,
-    text: "比赛中遇到比你高大的对手防守你，你会？",
+    text: "你更喜欢哪种游戏环境？",
     options: [
       {
         id: "a",
-        text: "利用速度突破他",
-        personalityPoints: { driver: 3, athletic: 2, scorer: 1 }
+        text: "充满挑战和竞争的环境",
+        personalityPoints: { free: 3, confident: 2, independent: 1 }
       },
       {
         id: "b",
-        text: "在外线投篮，拉开空间",
-        personalityPoints: { threePoint: 2, shooter: 2, smart: 1 }
+        text: "和谐友好的团队氛围",
+        personalityPoints: { loyal: 3, helpful: 2, responsible: 1 }
       },
       {
         id: "c",
-        text: "传球给队友，创造机会",
-        personalityPoints: { playmaker: 3, teamPlayer: 2, smart: 1 }
+        text: "轻松愉快的游戏体验",
+        personalityPoints: { playful: 3, clever: 2, curious: 1 }
       },
       {
         id: "d",
-        text: "用节奏和技巧戏耍他",
-        personalityPoints: { rhythm: 3, ballHandler: 2, smart: 1 }
+        text: "安静专注的游戏环境",
+        personalityPoints: { deep: 3, mysterious: 2, thoughtful: 1 }
       }
     ]
   },
   {
     id: 10,
-    text: "你认为赢球最重要的因素是？",
+    text: "你认为游戏的意义是什么？",
     options: [
       {
         id: "a",
-        text: "超强的个人得分能力",
-        personalityPoints: { scorer: 3, dominant: 2, killer: 1 }
+        text: "挑战自我，追求极限",
+        personalityPoints: { free: 3, confident: 2, independent: 1 }
       },
       {
         id: "b",
-        text: "铜墙铁壁般的防守",
-        personalityPoints: { defender: 3, tough: 2, lockdown: 1 }
+        text: "结交朋友，团队合作",
+        personalityPoints: { loyal: 3, helpful: 2, responsible: 1 }
       },
       {
         id: "c",
-        text: "流畅的团队配合",
-        personalityPoints: { teamPlayer: 3, playmaker: 2, unselfish: 1 }
+        text: "放松心情，享受乐趣",
+        personalityPoints: { playful: 3, clever: 2, curious: 1 }
       },
       {
         id: "d",
-        text: "关键时刻的大心脏",
-        personalityPoints: { clutch: 3, killer: 2, leader: 1 }
+        text: "锻炼思维，提升策略",
+        personalityPoints: { deep: 3, mysterious: 2, thoughtful: 1 }
       }
     ]
   }

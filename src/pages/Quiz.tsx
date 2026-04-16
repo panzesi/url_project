@@ -36,21 +36,21 @@ export default function Quiz() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-500 via-red-500 to-pink-500 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-purple-800 to-indigo-900 flex items-center justify-center p-4">
       <div className="max-w-2xl w-full">
-        <div className="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl p-8">
+        <div className="bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl p-8">
           <div className="mb-6">
             <div className="flex justify-between items-center mb-3">
               <span className="text-sm font-semibold text-gray-600">
                 问题 {currentQuestion + 1} / {questions.length}
               </span>
-              <span className="text-sm font-semibold text-orange-600">
+              <span className="text-sm font-semibold text-purple-600">
                 {Math.round(progress)}%
               </span>
             </div>
             <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
               <div
-                className="bg-gradient-to-r from-orange-500 to-red-500 h-full rounded-full transition-all duration-500 ease-out"
+                className="bg-gradient-to-r from-purple-500 to-blue-500 h-full rounded-full transition-all duration-500 ease-out"
                 style={{ width: `${progress}%` }}
               />
             </div>
@@ -69,25 +69,25 @@ export default function Quiz() {
                   onClick={() => handleSelectOption(option.id)}
                   className={`w-full text-left p-5 rounded-2xl border-2 transition-all duration-300 ${
                     isSelected
-                      ? 'border-orange-500 bg-orange-50 shadow-md'
-                      : 'border-gray-200 hover:border-orange-300 hover:bg-gray-50'
+                      ? 'border-purple-500 bg-purple-50 shadow-md'
+                      : 'border-gray-200 hover:border-purple-300 hover:bg-gray-50'
                   }`}
                 >
                   <div className="flex items-center gap-4">
                     <div className={`w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm ${
                       isSelected
-                        ? 'bg-orange-500 text-white'
+                        ? 'bg-purple-500 text-white'
                         : 'bg-gray-200 text-gray-600'
                     }`}>
                       {option.id.toUpperCase()}
                     </div>
                     <span className={`font-medium ${
-                      isSelected ? 'text-orange-700' : 'text-gray-700'
+                      isSelected ? 'text-purple-700' : 'text-gray-700'
                     }`}>
                       {option.text}
                     </span>
                     {isSelected && (
-                      <CheckCircle2 className="w-6 h-6 text-orange-500 ml-auto" />
+                      <CheckCircle2 className="w-6 h-6 text-purple-500 ml-auto" />
                     )}
                   </div>
                 </button>
@@ -115,7 +115,7 @@ export default function Quiz() {
               className={`flex-1 py-4 px-6 rounded-2xl font-semibold text-lg flex items-center justify-center gap-2 transition-all duration-300 ${
                 !hasAnswered
                   ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                  : 'bg-gradient-to-r from-orange-500 to-red-500 text-white hover:from-orange-600 hover:to-red-600 shadow-lg hover:shadow-xl transform hover:scale-105'
+                  : 'bg-gradient-to-r from-purple-600 to-blue-600 text-white hover:from-purple-700 hover:to-blue-700 shadow-lg hover:shadow-xl transform hover:scale-105'
               }`}
             >
               {currentQuestion === questions.length - 1 ? '查看结果' : '下一题'}

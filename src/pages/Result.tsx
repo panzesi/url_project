@@ -2,30 +2,29 @@
 import { useNavigate } from 'react-router-dom';
 import { useQuizStore } from '@/store/useQuizStore';
 import {
-  Trophy,
+  Sparkles,
   RotateCcw,
   Share2,
-  Target,
+  Wind,
   Shield,
   Users,
-  Lock,
-  Zap,
   Music,
+  Target,
   Star,
-  Crown,
+  Heart,
   CheckCircle2
 } from 'lucide-react';
 import { personalities } from '@/data/personalities';
 
 const iconMap: Record<string, any> = {
-  target: Target,
+  wind: Wind,
   shield: Shield,
-  users: Users,
-  lock: Lock,
-  zap: Zap,
+  fish: Star,
   music: Music,
+  target: Target,
   star: Star,
-  crown: Crown
+  heart: Heart,
+  users: Users
 };
 
 export default function Result() {
@@ -40,12 +39,12 @@ export default function Result() {
   const Icon = iconMap[result.iconName] || Star;
 
   const handleShare = async () => {
-    const shareText = `🏀 我的篮球人格是【${result.name}】！快来测测你是哪种类型的球员吧！`;
+    const shareText = `⚔️ 我的LBTI人格是【${result.name}】！快来测测你是哪种英雄联盟角色人格吧！`;
     
     if (navigator.share) {
       try {
         await navigator.share({
-          title: '篮球人格测试',
+          title: 'LBTI英雄联盟人格测试',
           text: shareText,
           url: window.location.href
         });
@@ -68,9 +67,9 @@ export default function Result() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-500 via-red-500 to-pink-500 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-purple-800 to-indigo-900 flex items-center justify-center p-4">
       <div className="max-w-2xl w-full">
-        <div className="bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden">
+        <div className="bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl overflow-hidden">
           <div 
             className="p-8 text-center"
             style={{ backgroundColor: result.color }}
@@ -82,13 +81,13 @@ export default function Result() {
             <h1 className="text-3xl font-bold text-white mb-2">
               {result.name}
             </h1>
-            <p className="text-white/90 text-lg">你的篮球人格</p>
+            <p className="text-white/90 text-lg">你的英雄联盟人格</p>
           </div>
 
           <div className="p-8">
             <div className="mb-8">
               <h2 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
-                <Trophy className="w-6 h-6 text-orange-500" />
+                <Sparkles className="w-6 h-6 text-purple-500" />
                 人格分析
               </h2>
               <p className="text-gray-600 leading-relaxed text-lg">
@@ -125,7 +124,7 @@ export default function Result() {
                       key={personality.id}
                       className={`p-3 rounded-xl border-2 transition-all ${
                         isCurrent
-                          ? 'border-orange-500 bg-orange-50'
+                          ? 'border-purple-500 bg-purple-50'
                           : 'border-gray-200 bg-gray-50'
                       }`}
                     >
@@ -135,12 +134,12 @@ export default function Result() {
                           style={{ color: isCurrent ? result.color : '#9CA3AF' }}
                         />
                         <span className={`text-sm font-medium ${
-                          isCurrent ? 'text-orange-700' : 'text-gray-600'
+                          isCurrent ? 'text-purple-700' : 'text-gray-600'
                         }`}>
                           {personality.name}
                         </span>
                         {isCurrent && (
-                          <CheckCircle2 className="w-4 h-4 text-orange-500 ml-auto" />
+                          <CheckCircle2 className="w-4 h-4 text-purple-500 ml-auto" />
                         )}
                       </div>
                     </div>
@@ -152,7 +151,7 @@ export default function Result() {
             <div className="space-y-4">
               <button
                 onClick={handleShare}
-                className="w-full bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white font-bold py-4 px-8 rounded-2xl text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3"
+                className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-bold py-4 px-8 rounded-2xl text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3"
               >
                 <Share2 className="w-6 h-6" />
                 分享给好友
