@@ -8,6 +8,9 @@ export default defineConfig({
   build: {
     sourcemap: 'hidden',
   },
+  server: {
+    allowedHosts: ['clubbing-deduce-pacemaker.ngrok-free.dev', 'localhost', '127.0.0.1']
+  },
   plugins: [
     react({
       babel: {
