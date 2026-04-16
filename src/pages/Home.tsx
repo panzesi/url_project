@@ -6,9 +6,18 @@ export default function Home() {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-purple-800 to-indigo-900 flex items-center justify-center p-4">
-      <div className="max-w-md w-full">
-        <div className="bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl p-8 text-center">
+    <div className="min-h-screen relative flex items-center justify-center p-4">
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ 
+          backgroundImage: 'url("https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=league%20of%20legends%20epic%20battle%20scene%20with%20champions%2C%20cinematic%20art%20style%2C%20dramatic%20lighting%2C%20video%20game%20key%20art&image_size=landscape_16_9")'
+        }}
+      >
+        <div className="absolute inset-0 bg-black/60" />
+      </div>
+      
+      <div className="relative max-w-md w-full">
+        <div className="bg-white/95 backdrop-blur-md rounded-3xl shadow-2xl p-8 text-center">
           <div className="mb-6">
             <div className="w-32 h-32 mx-auto bg-gradient-to-br from-purple-500 to-blue-500 rounded-full flex items-center justify-center shadow-lg animate-bounce">
               <Sparkles className="w-16 h-16 text-white" />

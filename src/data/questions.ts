@@ -14,261 +14,261 @@ export interface Option {
 export const questions: Question[] = [
   {
     id: 1,
-    text: "在游戏的关键团战时，你会选择哪种方式参与？",
+    text: "在召唤师峡谷中，你更愿意扮演哪种角色？",
     options: [
       {
         id: "a",
-        text: "冲锋在前，独自切入敌方后排",
+        text: "孤身一人在边路闯荡，享受1v1的乐趣",
         personalityPoints: { free: 3, confident: 2, independent: 1 }
       },
       {
         id: "b",
-        text: "保护队友，站在后排为他们挡技能",
+        text: "保护队友，为他们挡住所有伤害",
         personalityPoints: { protective: 3, reliable: 2, stable: 1 }
       },
       {
         id: "c",
-        text: "灵活走位，寻找机会骚扰敌人",
+        text: "灵活穿梭，用技巧戏耍对手",
         personalityPoints: { playful: 3, clever: 2, curious: 1 }
       },
       {
         id: "d",
-        text: "在远处观察，等待最佳时机",
+        text: "在黑暗中等待，给予致命一击",
         personalityPoints: { deep: 3, mysterious: 2, thoughtful: 1 }
       }
     ]
   },
   {
     id: 2,
-    text: "你最喜欢的游戏风格是？",
+    text: "当你看到敌方残血逃跑时，你会？",
     options: [
       {
         id: "a",
-        text: "追求极限操作，秀翻全场",
+        text: "不顾一切追击，哪怕越塔也要击杀",
         personalityPoints: { free: 3, confident: 2, independent: 1 }
       },
       {
         id: "b",
-        text: "稳扎稳打，确保团队胜利",
-        personalityPoints: { protective: 3, reliable: 2, stable: 1 }
+        text: "放弃追击，回头帮助队友",
+        personalityPoints: { loyal: 3, helpful: 2, responsible: 1 }
       },
       {
         id: "c",
-        text: "出其不意，玩弄敌人于股掌之间",
+        text: "假装撤退，然后突然回头反杀",
         personalityPoints: { playful: 3, clever: 2, curious: 1 }
       },
       {
         id: "d",
-        text: "冷静分析，寻找敌人弱点",
+        text: "冷静判断，确保安全再动手",
         personalityPoints: { deep: 3, mysterious: 2, thoughtful: 1 }
       }
     ]
   },
   {
     id: 3,
-    text: "当队友失误导致团战失败时，你会怎么做？",
+    text: "在选择英雄时，你更看重什么？",
     options: [
       {
         id: "a",
-        text: "鼓励队友，一起分析问题",
-        personalityPoints: { loyal: 3, helpful: 2, responsible: 1 }
+        text: "帅！颜值就是正义",
+        personalityPoints: { free: 3, confident: 2, independent: 1 }
       },
       {
         id: "b",
-        text: "保持沉默，专注于下一场战斗",
-        personalityPoints: { determined: 3, focused: 2, persistent: 1 }
+        text: "能保护队友，让团队更强大",
+        personalityPoints: { protective: 3, reliable: 2, stable: 1 }
       },
       {
         id: "c",
-        text: "用幽默的方式化解尴尬",
-        personalityPoints: { optimistic: 3, energetic: 2, brave: 1 }
+        text: "好玩有趣，能整活",
+        personalityPoints: { playful: 3, clever: 2, curious: 1 }
       },
       {
         id: "d",
-        text: "用魅力感染队友，重新振作",
-        personalityPoints: { charming: 3, social: 2, elegant: 1 }
+        text: "神秘莫测，让对手猜不透",
+        personalityPoints: { deep: 3, mysterious: 2, thoughtful: 1 }
       }
     ]
   },
   {
     id: 4,
-    text: "你更倾向于选择哪种类型的英雄？",
+    text: "当队友需要帮助时，你会？",
     options: [
       {
         id: "a",
-        text: "刺客型英雄，追求瞬间爆发",
+        text: "用帅气的操作解决问题",
         personalityPoints: { free: 3, confident: 2, independent: 1 }
       },
       {
         id: "b",
-        text: "坦克型英雄，保护队友",
+        text: "立刻赶到，用身体挡住危险",
         personalityPoints: { protective: 3, reliable: 2, stable: 1 }
       },
       {
         id: "c",
-        text: "法师型英雄，控制和消耗",
-        personalityPoints: { deep: 3, mysterious: 2, thoughtful: 1 }
+        text: "用意想不到的方式帮助他们",
+        personalityPoints: { playful: 3, clever: 2, curious: 1 }
       },
       {
         id: "d",
-        text: "射手型英雄，远程输出",
-        personalityPoints: { determined: 3, focused: 2, persistent: 1 }
+        text: "先观察局势，再制定计划",
+        personalityPoints: { deep: 3, mysterious: 2, thoughtful: 1 }
       }
     ]
   },
   {
     id: 5,
-    text: "在游戏中遇到逆风局，你会怎么做？",
+    text: "在游戏中失利时，你会？",
     options: [
       {
         id: "a",
-        text: "鼓励队友，永不放弃",
+        text: "相信自己，下一把一定能赢",
         personalityPoints: { optimistic: 3, energetic: 2, brave: 1 }
       },
       {
         id: "b",
-        text: "专注于自己的发育，寻找翻盘机会",
-        personalityPoints: { determined: 3, focused: 2, persistent: 1 }
+        text: "安慰队友，我们还有机会",
+        personalityPoints: { loyal: 3, helpful: 2, responsible: 1 }
       },
       {
         id: "c",
-        text: "分析局势，制定防守策略",
-        personalityPoints: { deep: 3, mysterious: 2, thoughtful: 1 }
+        text: "开个玩笑，让气氛轻松起来",
+        personalityPoints: { playful: 3, clever: 2, curious: 1 }
       },
       {
         id: "d",
-        text: "用幽默的方式缓解压力",
-        personalityPoints: { playful: 3, clever: 2, curious: 1 }
+        text: "分析失败原因，下次改进",
+        personalityPoints: { deep: 3, mysterious: 2, thoughtful: 1 }
       }
     ]
   },
   {
     id: 6,
-    text: "你认为游戏中最重要的品质是什么？",
+    text: "你最喜欢哪种击杀方式？",
     options: [
       {
         id: "a",
-        text: "个人能力和操作",
+        text: "华丽的连招，秀翻全场",
         personalityPoints: { free: 3, confident: 2, independent: 1 }
       },
       {
         id: "b",
-        text: "团队合作和沟通",
+        text: "配合队友，一起完成击杀",
         personalityPoints: { loyal: 3, helpful: 2, responsible: 1 }
       },
       {
         id: "c",
-        text: "战略思维和分析",
-        personalityPoints: { deep: 3, mysterious: 2, thoughtful: 1 }
+        text: "出其不意，让对手防不胜防",
+        personalityPoints: { playful: 3, clever: 2, curious: 1 }
       },
       {
         id: "d",
-        text: "乐观心态和韧性",
-        personalityPoints: { optimistic: 3, energetic: 2, brave: 1 }
+        text: "精准打击，一击致命",
+        personalityPoints: { determined: 3, focused: 2, persistent: 1 }
       }
     ]
   },
   {
     id: 7,
-    text: "在游戏中，你更喜欢哪种玩法？",
+    text: "在团队中，你希望自己是？",
     options: [
       {
         id: "a",
-        text: "单带推塔，牵制敌人",
+        text: "最亮眼的那个",
         personalityPoints: { free: 3, confident: 2, independent: 1 }
       },
       {
         id: "b",
-        text: "抱团推进，集体行动",
-        personalityPoints: { loyal: 3, helpful: 2, responsible: 1 }
+        text: "最可靠的后盾",
+        personalityPoints: { protective: 3, reliable: 2, stable: 1 }
       },
       {
         id: "c",
-        text: "野区游走，寻找机会",
+        text: "最有趣的开心果",
         personalityPoints: { playful: 3, clever: 2, curious: 1 }
       },
       {
         id: "d",
-        text: "线上发育，稳健提升",
-        personalityPoints: { determined: 3, focused: 2, persistent: 1 }
+        text: "最神秘的杀手锏",
+        personalityPoints: { deep: 3, mysterious: 2, thoughtful: 1 }
       }
     ]
   },
   {
     id: 8,
-    text: "当你获得优势时，你会怎么做？",
+    text: "当遇到强大的对手时，你会？",
     options: [
       {
         id: "a",
-        text: "乘胜追击，扩大优势",
+        text: "兴奋不已，终于有对手了",
         personalityPoints: { free: 3, confident: 2, independent: 1 }
       },
       {
         id: "b",
-        text: "稳健运营，确保胜利",
-        personalityPoints: { determined: 3, focused: 2, persistent: 1 }
+        text: "保护好队友，一起应对",
+        personalityPoints: { protective: 3, reliable: 2, stable: 1 }
       },
       {
         id: "c",
-        text: "分享资源，帮助队友",
-        personalityPoints: { loyal: 3, helpful: 2, responsible: 1 }
+        text: "用智慧和技巧战胜他",
+        personalityPoints: { playful: 3, clever: 2, curious: 1 }
       },
       {
         id: "d",
-        text: "戏弄敌人，享受游戏",
-        personalityPoints: { playful: 3, clever: 2, curious: 1 }
+        text: "仔细观察，寻找他的弱点",
+        personalityPoints: { deep: 3, mysterious: 2, thoughtful: 1 }
       }
     ]
   },
   {
     id: 9,
-    text: "你更喜欢哪种游戏环境？",
+    text: "你希望别人怎么评价你？",
     options: [
       {
         id: "a",
-        text: "充满挑战和竞争的环境",
+        text: "他真的太帅了！",
         personalityPoints: { free: 3, confident: 2, independent: 1 }
       },
       {
         id: "b",
-        text: "和谐友好的团队氛围",
-        personalityPoints: { loyal: 3, helpful: 2, responsible: 1 }
+        text: "有他在就很安心",
+        personalityPoints: { protective: 3, reliable: 2, stable: 1 }
       },
       {
         id: "c",
-        text: "轻松愉快的游戏体验",
+        text: "和他一起玩太开心了",
         personalityPoints: { playful: 3, clever: 2, curious: 1 }
       },
       {
         id: "d",
-        text: "安静专注的游戏环境",
-        personalityPoints: { deep: 3, mysterious: 2, thoughtful: 1 }
+        text: "他总是能抓住机会",
+        personalityPoints: { determined: 3, focused: 2, persistent: 1 }
       }
     ]
   },
   {
     id: 10,
-    text: "你认为游戏的意义是什么？",
+    text: "在召唤师峡谷，你的终极目标是？",
     options: [
       {
         id: "a",
-        text: "挑战自我，追求极限",
-        personalityPoints: { free: 3, confident: 2, independent: 1 }
+        text: "成为传说中的英雄",
+        personalityPoints: { optimistic: 3, energetic: 2, brave: 1 }
       },
       {
         id: "b",
-        text: "结交朋友，团队合作",
+        text: "和伙伴们一起赢得胜利",
         personalityPoints: { loyal: 3, helpful: 2, responsible: 1 }
       },
       {
         id: "c",
-        text: "放松心情，享受乐趣",
+        text: "玩得开心，留下有趣的回忆",
         personalityPoints: { playful: 3, clever: 2, curious: 1 }
       },
       {
         id: "d",
-        text: "锻炼思维，提升策略",
-        personalityPoints: { deep: 3, mysterious: 2, thoughtful: 1 }
+        text: "证明自己的实力",
+        personalityPoints: { determined: 3, focused: 2, persistent: 1 }
       }
     ]
   }
